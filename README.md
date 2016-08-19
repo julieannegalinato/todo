@@ -15,10 +15,11 @@ The project was built using flask as the framework based in python, restful api,
 * Contributors
 
 ####Features
-*Web Application for Adding, Viewing,Editing and Deleting of to-do-list
-*
-*
-*
+#####To-Do-List Web Application for : 
+*Adding
+*Viewing 
+*Editing
+*Deleting
 
 ####Requirements
 ######1.	Python 2.7x (with Setup Environment Variable fix)
