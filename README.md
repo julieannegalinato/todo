@@ -81,13 +81,22 @@ Refer to the online documentation for the installation of mongodb to the link ht
 *	Sublime Text Editor: https://www.sublimetext.com/3
 *	Notepad++
 
-#####API Reference
-
-
-#####Libraries
-
 
 ####Development
+Update 1:
+* Done installing the requirements- August 15, 2016
+* Done coding and adding the add function- August 16,2016
+
+Update 2:
+* Done coding and integrating the view function to the web application - August 17, 2016
+* Done adding the delete function to the web app
+* 
+Update 3:
+* Done coding and integrating the edit function to the web application - August 19, 2016
+* Commiting the source code to the github and uploading the web app - August 29, 2016
+
+Live Demo:
+http://julieannemg.pythonanywhere.com/
 
 ####Contributors
 * Caburnay, John david [jdcaburnay (git) , @johnca (slack)]- specific task includes developing and refining GUI
