@@ -3,10 +3,15 @@ from pymongo import MongoClient
 from bson import ObjectId, json_util
 from flask import jsonify
 
-client = MongoClient()
-client = MongoClient('mongodb://michaelgo:abc123@ds161505.mlab.com:61505/db_todolist')
-db = client.test
-#print posts.find_one({"text":"search for book if available"})
+# #client = MongoClient()
+# client = MongoClient('mlab://michaelgo:abc123@ds161505.mlab.com:61505/db_todolist')
+# db = client.db_todolist
+# #print posts.find_one({"text":"search for book if available"})
+# retrieve = db.mylist
+
+client = MongoClient('ds161505.mlab.com',61505)
+client.db_todolist.authenticate('julieannemg','Jmg1248.')
+db = client.db_todolist
 retrieve = db.mylist
 
 def add(data):
