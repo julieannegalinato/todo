@@ -3,16 +3,10 @@ from pymongo import MongoClient
 from bson import ObjectId, json_util
 from flask import jsonify
 
-# #client = MongoClient()
-# client = MongoClient('mlab://michaelgo:abc123@ds161505.mlab.com:61505/db_todolist')
-# db = client.db_todolist
-# #print posts.find_one({"text":"search for book if available"})
-# retrieve = db.mylist
-
 client = MongoClient('ds161505.mlab.com',61505)
 client.db_todolist.authenticate('julieannemg','Jmg1248.')
 db = client.db_todolist
-retrieve = db.mylist
+retrieve = db.mylist 
 
 def add(data):
 	retrieve.insert_one(data)
@@ -27,13 +21,18 @@ def view():
 	viewdata = retrieved	
 	return (viewdata)
 
+# print view()
+
+
 def delete(taskID):
 	#vartostring = str(taskID)
 	#vardelete = "{'_id': ObjectID('" + vartostring +"')}"
 	#output = []
 	#for collect in retrive.find():
+		#output.append({'_id':j['id'] ,'task':j['task'],'desc':j['desc'],'due':j['due']})
+		#sorted_output = sorted(output, key=lambda k: k['due'])
+		#print "\DELETE THIS: " + str(taskID)
 	retrieve.remove({'_id': ObjectId(''+taskID+'')})
-
 def update(taskID,data):
 	print taskID
 	print str(data)

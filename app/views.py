@@ -5,7 +5,8 @@ import json
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template("index.html", pageTitle="To-Do List App")
+    #return render_template('index.html')
 '''
 @app.route('/echo/', methods=['GET'])
 def echo():
@@ -31,6 +32,7 @@ def _delete():
     taskID = str(request.args.get('taskID'))
     api.delete(taskID)
     return jsonify(result = api.view())
+
 
 @app.route('/_edit')
 def _edit():

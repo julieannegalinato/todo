@@ -1,0 +1,100 @@
+body {
+	background-image: url("../images/back.png");
+	float: center;
+	position: relative;
+	margin-top: 30px;
+	width: 600px;
+	float: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#container{
+	background-color:#403f3f;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	float: center;
+	position: relative;
+	border-radius: 10px;
+	border: 10px solid #4073bf;
+	text-align: center;
+	width: 550px;
+}
+.form{
+	background-color:#403f3f;
+	color: #fff;
+	float: center;
+	position: relative;
+	font-family: 'Quicksand', sans-serif;
+}
+ol{
+	color: #fff;
+	float: center;
+	position: relative;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: -50px;
+}
+.inputstyle{
+	position: relative;
+	align: center;
+	border: 3px dashed #D1C7AC;
+	width: 300px;
+	margin: 10px 0px 0px -15px; 
+	font-family: 'Quicksand', sans-serif;
+}
+#submitBtn{
+	background-color: #4073bf;
+	border: 5px solid #4073bf;
+	margin-left: 0px;
+	width: 125px;
+	height: 40px;
+	position: relative;
+	float: center; 
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 17px;
+}
+.btnDel{
+background-color: #ff5050;
+border: 5px solid #ff5050;
+color: #fff;
+font-family: 'Quicksand', sans-serif;
+}
+.btnEdit{
+background-color: #40bf40;
+color: #fff;
+border: 5px solid #40bf40;
+font-family: 'Quicksand', sans-serif;
+} 
+#form_input{
+	background-color:#403f3f;
+	color: #fff;
+	float: center;
+	position: relative;
+
+}
+.textbox { 
+    border: 3px ridge #FFA5A5; 
+    outline:0; 
+    height:25px; 
+    width: 275px; 
+} 
+
+#main-form {
+	float: center;
+	position: relative;
+	margin-top: 20px;
+	background-color: #403f3f;
+	border-radius: 20px;
+	width: 450px;
+	border: 3px solid #4073bf;
+	float: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+#textbox { 
+	border: 3px ridge #FFA5A5; 
+	outline:0; 
+	height:25px; 
+	width: 275px; 
+} 
