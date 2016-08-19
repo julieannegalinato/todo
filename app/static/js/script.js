@@ -1,4 +1,5 @@
 function addTask() {
+    if (!validate()) return;
     $.getJSON('/_addTask',{task: $('input[name = "task"]').val(), desc: $('input[name = "desc"]').val(), date: $('input[name = "date"]').val()}, function(data){
         $("#result").text(data.result);
       })
@@ -57,3 +58,14 @@ function updateTask(id){
       });
 	location.reload();
     }
+
+function validate() {
+    var x = $('input[name = "task"]').val();
+    var y = $('input[name = "desc"]').val();
+    var z = $('input[name = "date"]').val();
+    if (x,y,z == null || x,y,z == "" || /[^a-zA-Z0-9\-\/]/.test(x,y) ) {
+        alert("Please fill up the Task, Description, and Date");
+        return false;
+    }
+    return true;
+}
